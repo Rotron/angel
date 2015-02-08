@@ -204,6 +204,8 @@ Route::get('/', 'PageController@show');
 // We need to ensure that this is the -absolute- last route, otherwise
 // we'll get caught in it before the router reaches other packages, due to the base-level URI variables.
 // Thus far, wrapping it in an App::before seems to do the trick.
+/*
+ * @TODO: These App functions no longer exist.
 App::before(function() {
 	Route::get('{url}/{section?}', 'PageController@show');
 });
@@ -215,3 +217,4 @@ App::missing(function($exception) {
 App::error(function(Illuminate\Database\Eloquent\ModelNotFoundException $e) {
 	return with(App::make('PageController'))->page_missing();
 });
+*/

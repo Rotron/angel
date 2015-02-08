@@ -18,7 +18,7 @@ class CoreServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		$this->package('angel/core');
+		//$this->package('angel/core');
 		include __DIR__ . '/Helpers.php';
 		include __DIR__ . '/ToolBelt.php';
 		include __DIR__ . '../../../routes.php';
